@@ -1,0 +1,81 @@
+link kde sme si vytvorili schemu: https://dbdiagram.io/home
+a napisali sme tam toto:
+
+
+Table User {
+  id text [pk, not null, unique]
+  email text [not null]
+  password text [not null]
+  city text [not null]
+  address text [not null]
+  role Role
+  cartId text [ref: > Cart.id]
+}
+
+
+Table Producer {
+  id text 
+  name text [not null]
+}
+
+Table Product {
+  id text [pk, not null, unique]
+  title text [not null]
+  description text
+  thumbnail text
+  categoryId text [ref: > Category.id]
+  price float [not null]
+  productType ProductType
+  producerId text [ref: > Producer.id]
+}
+
+Table Order {
+  id text [not null]
+  totalCost float [not null]
+  DeliveryAddress text [not null]
+  UserAddress text [not null]
+  SubmissionDate date
+  orderLines list
+  status Status
+  userId text [ref: > User.id]
+}
+
+Table OrderToOrderline {
+  orderId text [ref: > Order.id]
+  orderlineId text [ref: > Orderline.id]
+}
+
+Table Orderline {
+  id text [not null]
+  productId text [ref: > Product.id]
+  amount int
+  totalPrice float 
+}
+
+Table Cart {
+  id text [pk, not null, unique]
+  orderLines text [not null]
+}
+
+Table CartToOrderline {
+  orderLineId text [ref: > Orderline.id]
+  cartId text [ref: > Cart.id]
+}
+
+Table Category {
+  id text [pk, not null, unique]
+  name text [not null]
+}
+
+
+
+enum Status {
+  AVAILABLE
+  UNAVAILABLE
+}
+
+
+enum Role {
+  USER
+  ADMIN
+}

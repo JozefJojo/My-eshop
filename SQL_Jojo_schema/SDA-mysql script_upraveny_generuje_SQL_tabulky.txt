@@ -1,0 +1,62 @@
+CREATE TABLE `User` (
+  `id` int UNIQUE PRIMARY KEY NOT NULL,
+  `email` text NOT NULL,
+  `password` text NOT NULL,
+  `city` text NOT NULL,
+  `address` text NOT NULL,
+  `role` ENUM ('USER', 'ADMIN'),
+  `cartId` int
+);
+CREATE TABLE `Producer` (
+ `id` int UNIQUE PRIMARY KEY NOT NULL,
+  `name` text NOT NULL
+);
+CREATE TABLE `Product` (
+  `id` int UNIQUE PRIMARY KEY NOT NULL,
+  `title` text NOT NULL,
+  `description` text,
+  `thumbnail` text,
+  `categoryId` int,
+  `price` float NOT NULL,
+  `producerId` int
+);
+CREATE TABLE `Order` (
+  `id` int UNIQUE PRIMARY KEY NOT NULL,
+  `totalCost` float NOT NULL,
+  `DeliveryAddress` text NOT NULL,
+  `UserAddress` text NOT NULL,
+  `SubmissionDate` date,
+  `status` ENUM ('AVAILABLE', 'UNAVAILABLE'),
+  `userId` int
+);
+CREATE TABLE `OrderToOrderline` (
+  `orderId` int NOT NULL,
+  `orderlineId` int NOT NULL
+);
+CREATE TABLE `Orderline` (
+  `id` int UNIQUE PRIMARY KEY NOT NULL,
+  `productId` int,
+  `amount` int,
+  `totalPrice` float
+);
+CREATE TABLE `Cart` (
+  `id` int UNIQUE PRIMARY KEY NOT NULL,
+  `orderLines` text NOT NULL
+);
+CREATE TABLE `CartToOrderline` (
+  `orderLineId` int,
+  `cartId` int
+);
+CREATE TABLE `Category` (
+  `id` int UNIQUE PRIMARY KEY NOT NULL,
+  `name` text NOT NULL
+);
+ALTER TABLE `User` ADD FOREIGN KEY (`cartId`) REFERENCES `Cart` (`id`);
+ALTER TABLE `Product` ADD FOREIGN KEY (`categoryId`) REFERENCES `Category` (`id`);
+ALTER TABLE `Product` ADD FOREIGN KEY (`producerId`) REFERENCES `Producer` (`id`);
+ALTER TABLE `Order` ADD FOREIGN KEY (`userId`) REFERENCES `User` (`id`);
+ALTER TABLE `OrderToOrderline` ADD FOREIGN KEY (`orderId`) REFERENCES `Order` (`id`);
+ALTER TABLE `OrderToOrderline` ADD FOREIGN KEY (`orderlineId`) REFERENCES `Orderline` (`id`);
+ALTER TABLE `Orderline` ADD FOREIGN KEY (`productId`) REFERENCES `Product` (`id`);
+ALTER TABLE `CartToOrderline` ADD FOREIGN KEY (`orderLineId`) REFERENCES `Orderline` (`id`);
+ALTER TABLE `CartToOrderline` ADD FOREIGN KEY (`cartId`) REFERENCES `Cart` (`id`);
