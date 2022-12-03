@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88a33754-dd3b-4433-ba2c-64db16d831f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/JpaProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/JpaProductServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductServices.java" afterDir="false" />
-    </list>
+    <list default="true" id="88a33754-dd3b-4433-ba2c-64db16d831f4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
