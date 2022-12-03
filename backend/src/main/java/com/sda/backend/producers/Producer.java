@@ -1,4 +1,4 @@
-package com.sda.backend.products;
+package com.sda.backend.producers;
 
 import lombok.Data;
 

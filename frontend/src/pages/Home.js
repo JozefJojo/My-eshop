@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProductService from '../services/ProductService';
 
+
 class Home extends Component {
 
     constructor(props){
@@ -32,10 +33,22 @@ class Home extends Component {
                                 <th>Product thumbnail</th>
                                 <th>Product Category Id</th>
                                 <th>Product Price</th>
-                                <th>Product Producer Id</th>
+                                <th>Product Producer Name</th>
                             </tr>
                         </thead>
                             <tbody>
+                            <tr key = {1}>
+                                <td>{1}</td>
+                                <td>{"auto"}</td>
+                                <td>{"porsche"}</td>
+                                <td>{""}</td>
+                                <td>{2}</td>
+                                <td>{100}</td>
+                                <td>{"porsche"}</td>
+                                <td><button onClick={this.props.navigation.navigate(`/products/${1}`)}>Buy</button> </td>
+                            </tr>
+
+
                                 {
                                     this.state.products.map(
                                         product =>
@@ -47,6 +60,7 @@ class Home extends Component {
                                             <td>{product.category_id}</td>
                                             <td>{product.price}</td>
                                             <td>{product.producer_id}</td>
+                                            <td><button onClick={this.props.navigation.navigate(`/products/${product.id}`)}>Buy</button> </td>
                                         </tr>)
                                 }
                             </tbody>
