@@ -9,7 +9,7 @@ import java.util.List;
 public class JpaProductServices implements ProductServices{
 
     private ProductRepository productRepository;
-    private ProducerRepository producerRepository
+    private ProducerRepository producerRepository;
 
     public JpaProductServices(ProductRepository productRepository, ProducerRepository producerRepository) {
         this.productRepository = productRepository;
