@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.navigation-bar {
+  display: flex;
+  color: white;
+  background: black;
+  padding: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.navigation-bar h1 {
+  font-size: 1.8em;
+}
+
+.navigation-bar a {
+  color: inherit;
+}
+
+
+.button {
+  border: none;
+  background: white;
+  border-radius: 3px;
+  padding: 0.5rem 1.5rem;
+}
+
+.button:hover {
+  background: rgb(136, 136, 136);
+}

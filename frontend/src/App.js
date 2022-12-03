@@ -1,11 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import ListProductsComponent from './components/ListProductsComponent';
+import NavigationBar from './components/NavigationBar';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+
 
 function App() {
   return (
     <div className="container">
-      <ListProductsComponent/>
+      <NavigationBar/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path="/profile" element={<Profile/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

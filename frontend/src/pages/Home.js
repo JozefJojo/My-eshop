@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProductService from '../services/ProductService';
 
-class ListProductsComponent extends Component {
+class Home extends Component {
 
     constructor(props){
         super(props)
@@ -58,4 +58,4 @@ class ListProductsComponent extends Component {
     }
 }
 
-export default ListProductsComponent;
+export default Home;
