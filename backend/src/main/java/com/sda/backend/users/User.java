@@ -2,25 +2,26 @@ package com.sda.backend.users;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "user")
+@Table(name = "User")
 public class User {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     public Integer id;
 
     @Column(name = "email")
     public String email;
 
-    @Column(name = "password")
-    public String password;
+    @Column(name = "name")
+    public String name;
+
+    @Column(name = "picture")
+    public String picture;
 
     @Column(name = "city")
     public String city;
@@ -30,7 +31,4 @@ public class User {
 
     @Column(name = "role")
     public String role;
-
-    @Column(name = "cartId")
-    public String cartId;
 }

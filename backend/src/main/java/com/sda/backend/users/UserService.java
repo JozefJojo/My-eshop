@@ -1,9 +1,11 @@
 package com.sda.backend.users;
 
 import com.sda.backend.products.ProductModel;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserService implements IUserService {
 
 

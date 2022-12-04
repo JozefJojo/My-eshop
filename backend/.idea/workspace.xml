@@ -6,14 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="88a33754-dd3b-4433-ba2c-64db16d831f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/CartRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/CartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/ICartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/products/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/backend/products/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/NavigationBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/RegisterButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/RegisterButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
