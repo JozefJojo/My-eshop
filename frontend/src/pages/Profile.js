@@ -13,8 +13,14 @@ const Profile = () => {
     
     const saveUserExtended = async (newUser) => {
   
+      const user = {
+        email: newUser.email,
+        picture: newUser.picture,
+        name: newUser.name
+      }
+
       const accessToken = await getAccessTokenSilently();
-      const data = await saveUser(accessToken, newUser)
+      const data = await saveUser(accessToken, user)
   
       console.log(data)
     }

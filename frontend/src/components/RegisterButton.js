@@ -13,6 +13,7 @@ const RegisterButton = () => {
       appState: {
         returnTo: "/profile",
       },
+      
     });
   };
 
