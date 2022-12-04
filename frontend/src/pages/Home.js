@@ -37,7 +37,7 @@ class Home extends Component {
                             </tr>
                         </thead>
                             <tbody>
-                            <tr key = {1}>
+                            {/* <tr key = {1}>
                                 <td>{1}</td>
                                 <td>{"auto"}</td>
                                 <td>{"porsche"}</td>
@@ -46,10 +46,10 @@ class Home extends Component {
                                 <td>{100}</td>
                                 <td>{"porsche"}</td>
                                 <td><button onClick={this.props.navigation.navigate(`/products/${1}`)}>Buy</button> </td>
-                            </tr>
+                            </tr> */}
 
 
-                                {
+                                {/* {
                                     this.state.products.map(
                                         product =>
                                         <tr key = {product.id}>
@@ -62,7 +62,7 @@ class Home extends Component {
                                             <td>{product.producer_id}</td>
                                             <td><button onClick={this.props.navigation.navigate(`/products/${product.id}`)}>Buy</button> </td>
                                         </tr>)
-                                }
+                                } */}
                             </tbody>
                     </table>
 

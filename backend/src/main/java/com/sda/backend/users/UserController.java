@@ -3,8 +3,12 @@ package com.sda.backend.users;
 import com.sda.backend.products.ProductModel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.rmi.ServerException;
 import java.util.List;
 
 @RestController
@@ -19,6 +23,18 @@ public class UserController {
     @GetMapping
     public List<User> getUsers() {
         return userService.findAllUsers();
+    }
+
+
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<User> create(@RequestBody User newUser) throws Exception {
+        var user = userService.create(newUser);
+
+        if (user == null) {
+            throw new ServerException("The user has not been created");
+        }
+
+        return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
 
     @GetMapping("/{id}")

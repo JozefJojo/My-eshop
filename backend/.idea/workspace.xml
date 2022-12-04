@@ -6,26 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="88a33754-dd3b-4433-ba2c-64db16d831f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/JpaProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/producers/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProducerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/producers/ProducerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/products/JpaProductServices$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/products/JpaProductServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/products/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/products/ProducerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/products/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/backend/products/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/products/ProductServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/NavigationBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/services/ProductService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/ProductService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,27 +71,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/cetis/sampleproject/backend/src/main/java/com/sda/backend/cart",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cetis/sampleproject/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b43fdd98b1fd705ae4c3a10cf25aad8a&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.sda.backend.products" />

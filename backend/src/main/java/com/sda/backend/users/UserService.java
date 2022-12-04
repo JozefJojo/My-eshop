@@ -22,4 +22,9 @@ public class UserService implements IUserService {
     public User findById(Integer id) {
         return this.userRepository.findById(id).get();
     }
+
+    @Override
+    public User create(User newUser) {
+        return this.userRepository.save(newUser);
+    }
 }
