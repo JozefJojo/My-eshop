@@ -20,9 +20,8 @@ const Profile = () => {
       }
 
       const accessToken = await getAccessTokenSilently();
-      const data = await saveUser(accessToken, user)
+      saveUser(accessToken, user)
   
-      console.log(data)
     }
     
     if (user) {

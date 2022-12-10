@@ -6,18 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="88a33754-dd3b-4433-ba2c-64db16d831f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/CartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/CartRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/CartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/cart/ICartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/RegisterButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/RegisterButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,5 +162,36 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductService.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -9,8 +9,8 @@ import Product from './pages/Product';
 function App() {
   return (
     <div className="container">
-      <NavigationBar/>
       <BrowserRouter>
+      <NavigationBar/>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>

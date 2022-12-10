@@ -27,6 +27,12 @@ public class UserService implements IUserService {
 
     @Override
     public User create(User newUser) {
-        return this.userRepository.save(newUser);
+
+        var user = this.userRepository.findByName(newUser.name);
+
+        if (user == null) {
+            return this.userRepository.save(newUser);
+        }
+        return null;
     }
 }

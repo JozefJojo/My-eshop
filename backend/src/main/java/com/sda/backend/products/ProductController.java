@@ -16,11 +16,13 @@ public class ProductController {
 
     @GetMapping
     public List<ProductModel> getProducts() {
+
         return productServices.findAllProduct();
     }
 
     @GetMapping("/{id}")
     public ProductModel getProductById(@PathVariable(value = "id") Integer id) {
+
         return productServices.findById(id);
     }
 }

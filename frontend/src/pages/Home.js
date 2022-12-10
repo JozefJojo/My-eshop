@@ -1,75 +1,58 @@
-import React, { Component } from 'react';
+import axios from 'axios';
+import React, {useEffect, useState } from 'react';
 import ProductService from '../services/ProductService';
+import { useNavigate } from 'react-router-dom'
 
 
-class Home extends Component {
+const Home = () => {
+  const [products, setProducts] = useState([]) 
+  const navigate = useNavigate()
 
-    constructor(props){
-        super(props)
-        this.state = {
-            products:[]
-        }
+
+  const displayText = (product) => {
+    if (product) {
+      if (product.description.length > 200) {
+        return product.description.substring(0, 200)
+      }
+      return product.description
+    }
+  }
+
+  useEffect(() => {
+    const getProductsAsync = async () => {
+      const response = await ProductService.getProducts()
+      
+      setProducts(response.data)
     }
 
-    componentDidMount(){
-        ProductService.getProducts().then((res) =>{
-              this.setState({products: res.data});   
-        });
-    }
+    getProductsAsync()
+  }, []);
 
-
-
-    render() {
-        return (
-             <div>
-                <h2 className='text-center'>Product List</h2>
-                <div className='row'>
-                    <table className='table table-striped table-bordered'>
-                        <thead>
-                            <tr>
-                                <th>Product Id</th>
-                                <th>Product Title</th>
-                                <th>Product Description</th>
-                                <th>Product thumbnail</th>
-                                <th>Product Category Id</th>
-                                <th>Product Price</th>
-                                <th>Product Producer Name</th>
-                            </tr>
-                        </thead>
-                            <tbody>
-                            {/* <tr key = {1}>
-                                <td>{1}</td>
-                                <td>{"auto"}</td>
-                                <td>{"porsche"}</td>
-                                <td>{""}</td>
-                                <td>{2}</td>
-                                <td>{100}</td>
-                                <td>{"porsche"}</td>
-                                <td><button onClick={this.props.navigation.navigate(`/products/${1}`)}>Buy</button> </td>
-                            </tr> */}
-
-
-                                {/* {
-                                    this.state.products.map(
-                                        product =>
-                                        <tr key = {product.id}>
-                                            <td>{product.id}</td>
-                                            <td>{product.title}</td>
-                                            <td>{product.description}</td>
-                                            <td>{product.thumnail}</td>
-                                            <td>{product.category_id}</td>
-                                            <td>{product.price}</td>
-                                            <td>{product.producer_id}</td>
-                                            <td><button onClick={this.props.navigation.navigate(`/products/${product.id}`)}>Buy</button> </td>
-                                        </tr>)
-                                } */}
-                            </tbody>
-                    </table>
-
-                </div>
+  const renderProducts = () => {
+    return products.map((product, index) => {
+      return (
+        <div key={index} className="product">
+            <div>
+                <h3 className="product-attribute" style={{}}>{product.title}</h3>
+                <div className="product-attribute">{displayText(product)}</div>
+                <div className="product-attribute">{product.producerName}</div> 
+                <div className="product-attribute" style={{marginTop: "1rem", fontWeight: "bold"}}>{product.price} kč</div>
             </div>
-        );
-    }
+            <div>
+                <button onClick={() => navigate(`/product/${product.id}`)}>BUY</button>
+            </div>
+        </div>
+      )
+    })
+  }
+
+  return (
+<div className="products-container">
+  <div className="products">
+      {renderProducts()}
+  </div>
+</div>
+  )
 }
 
-export default Home;
+export default Home
