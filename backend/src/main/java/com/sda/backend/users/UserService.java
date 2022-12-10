@@ -35,4 +35,14 @@ public class UserService implements IUserService {
         }
         return null;
     }
+
+    @Override
+    public User findByName(String userName) {
+        return userRepository.findByName(userName);
+    }
+
+    @Override
+    public User findByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
 }

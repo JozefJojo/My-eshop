@@ -10,4 +10,8 @@ public interface IUserService {
     User findById(Integer id);
 
     User create(User newUser);
+
+    User findByName(String userName);
+
+    User findByEmail(String email);
 }

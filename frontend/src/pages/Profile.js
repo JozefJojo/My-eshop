@@ -25,7 +25,7 @@ const Profile = () => {
     }
     
     if (user) {
-      console.log("User is not null!")
+      console.log(user)
       saveUserExtended(user)
     }
 

@@ -22,7 +22,14 @@ export const saveUser = async (accessToken, newUser) => {
   } catch (error) {
     console.log("The user already exists.")
   }
-  
+}
 
+export const getUserByEmail = async (email) => {
 
+  try {
+    const response = await axios.get(`${apiServerUrl}/users/email/${email}`)
+    return response
+  } catch (error) {
+    console.log(error.message)
+  }
 }
