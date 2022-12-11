@@ -9,7 +9,40 @@ class OrderlineService {
             return response
             
         } catch (error) {
-            console.error("Something went wrong!", error.message)
+            console.error(error.message)
+            return null
+        }
+    }
+
+    async getOrderlines(userId) {
+        try {
+            const response = await axios.get(`${ORDERLINE_URL}?userId=${userId}`);
+            return response
+            
+        } catch (error) {
+            console.error(error.message)
+            return null
+        }
+    }
+
+    async removeOrderline(orderlineId) {
+        try {
+            const response = await axios.delete(`${ORDERLINE_URL}?orderlineId=${orderlineId}`);
+            return response
+            
+        } catch (error) {
+            console.error(error.message)
+            return null
+        }
+    }
+
+    async editOrderlineAmountById(orderlineId, amount) {
+        try {
+            const response = await axios.put(`${ORDERLINE_URL}?orderlineId=${orderlineId}&amount=${amount}`);
+            return response
+            
+        } catch (error) {
+            console.error(error.message)
             return null
         }
     }

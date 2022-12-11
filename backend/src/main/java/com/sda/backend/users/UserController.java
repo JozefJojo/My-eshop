@@ -25,7 +25,6 @@ public class UserController {
         return userService.findAllUsers();
     }
 
-
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> create(@RequestBody User newUser) throws Exception {
         var user = userService.create(newUser);

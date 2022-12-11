@@ -21,6 +21,7 @@ code {
   padding: 1rem;
 
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .navigation-bar h1 {
@@ -65,4 +66,22 @@ code {
   border-radius: 10px;
   padding: 1rem;
 
+}
+
+.cart-button:hover {
+  cursor: pointer;
+}
+
+.orderline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cart-bottom {
+  display: flex;
+  flex-direction: column;
+
+  align-items: right;
+  align-items: flex-end;
 }

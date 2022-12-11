@@ -24,10 +24,45 @@ public class OrderlineController {
         return orderlineService.findAllOrderlines();
     }
 
+    @GetMapping(params = {"userId"})
+    public List<OrderlineModel> getOrderlinesByUserId(@RequestParam(name = "userId") int userId) {
+        return orderlineService.findByUserId(userId);
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @DeleteMapping
+    public String deleteOrderlineById(@RequestParam(name = "orderlineId") int orderlineId) throws Exception {
+        try {
+            orderlineService.deleteById(orderlineId);
+        } catch (Exception e) {
+            throw new ServerException(String.format("Orderline with id %d has not been successfully removed.", orderlineId));
+        }
+
+        return String.format("Orderline with id %d has been successfully removed.", orderlineId);
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @PutMapping
+    public String updateOrderlineAmountById(@RequestParam(name = "orderlineId") int orderlineId, @RequestParam(name = "amount") int amount) throws Exception {
+        try {
+            orderlineService.updateAmountById(orderlineId, amount);
+        } catch (Exception e) {
+            throw new ServerException(String.format("Orderline's amount with id %d has not been successfully updated.", orderlineId));
+        }
+
+        return String.format("Orderline's amount with id %d has been successfully updated.", orderlineId);
+    }
+
+
+
+
+
     @GetMapping("/{id}")
-    public Orderline getOrderlineById(@PathVariable(value = "id") Integer id) {
+    public Orderline getOrderlineById(@PathVariable(value = "id") int id) {
         return orderlineService.findById(id);
     }
+
+
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Orderline> createOrderline(@RequestBody Orderline newOrderline) throws Exception {

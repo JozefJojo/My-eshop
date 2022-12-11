@@ -4,13 +4,25 @@ import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from './LogoutButton';
 import RegisterButton from './RegisterButton';
 import ProfileButton from './ProfileButton'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
+import {ReactComponent as CartLogo} from '../assets/cart-logo.svg';
 
 
 const NavigationBar = () => {
   const { isAuthenticated } = useAuth0();
   const location = useLocation()
+  const navigate = useNavigate()
 
+  const renderCartButton = () => {
+
+    if (isAuthenticated) {
+      return (
+        
+          <CartLogo className="cart-button" onClick={() => navigate("cart")} style={{width: "30px", height: "30px", marginRight: "1rem", }}/>
+        
+      )
+    }
+  }
 
 
   const renderProfileButton = () => {
@@ -42,6 +54,7 @@ const NavigationBar = () => {
           <a href='/'>My e-shop</a>
         </h1>
       <div style={{flexGrow: 1}}/>
+      {renderCartButton()}
       {renderProfileButton()}
       {renderRegisterButton()}
       {renderButton()}

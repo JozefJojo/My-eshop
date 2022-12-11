@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, {useEffect, useState } from 'react';
 import ProductService from '../services/ProductService';
 import {useParams} from 'react-router-dom'
@@ -37,9 +36,9 @@ const Product = () => {
 
     const orderline = {
       totalPrice: amount.value * product.price,
-      productId: parseInt(params.id),
+      productId: product.id,
       userId: response.data.id,
-      amount
+      amount: amount.value
     }
 
     console.log(orderline)

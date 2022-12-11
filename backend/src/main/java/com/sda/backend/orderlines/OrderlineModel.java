@@ -5,25 +5,10 @@ import javax.persistence.Id;
 
 public class OrderlineModel {
 
-    @Id
-    @Column(name = "id")
-    public Integer id;
-
-    @Column(name = "title")
+    public int id;
     public String title;
-
-    @Column(name = "description")
-    public String description;
-
-    @Column(name = "thumbnail")
     public String thumbnail;
+    public float totalPrice;
+    public int amount;
 
-    @Column(name = "categoryId")
-    public Integer categoryId;
-
-    @Column(name = "price")
-    public Float price;
-
-    @Column(name = "producerName")
-    public String producerName;
 }
