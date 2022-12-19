@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, {useEffect, useState } from 'react';
 import ProductService from '../services/ProductService';
 import { useNavigate } from 'react-router-dom'
-
+import getStripe from '../lib/getStripe'
 
 const Home = () => {
   const [products, setProducts] = useState([]) 
@@ -10,6 +10,25 @@ const Home = () => {
   const [searchResults, setSearchResults] = useState([]) 
 
   const navigate = useNavigate()
+
+
+  const handleCheckout = async () => {
+    const stripe = await getStripe();
+    const { error } = await stripe.redirectToCheckout({
+      lineItems: [
+        {
+          price: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
+          quantity: 1,
+        },
+      ],
+      mode: 'subscription',
+      successUrl: `http://localhost:3000/success`,
+      cancelUrl: `http://localhost:3000/cancel`,
+      customerEmail: 'customer@email.com',
+    });
+    console.warn(error.message);
+  }
+
 
   const setInput = event => {
     const { value } = event.target;
@@ -73,6 +92,7 @@ const Home = () => {
 
   return (
 <div className="products-container">
+    <button onClick={handleCheckout}>Checkout</button>
     <input type="text" value={searchValue} onChange={setInput}/>
 
     <div style={{marginTop: "1rem", marginBottom: "1rem"}}>Vyhledávací výsledky</div>
