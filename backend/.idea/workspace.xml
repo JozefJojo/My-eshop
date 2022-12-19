@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a33754-dd3b-4433-ba2c-64db16d831f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/IOrderlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/IOrderlineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/producers/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/producers/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/services/OrderlineService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/OrderlineService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/services/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/backend/BackendApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/backend/BackendApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
