@@ -45,4 +45,15 @@ public class UserService implements IUserService {
     public User findByEmail(String email) {
         return userRepository.findByEmail(email);
     }
+
+    @Override
+    public User update(User newUser) {
+        try {
+            return userRepository.save(newUser);
+        }
+        catch (Exception e) {
+            return null;
+        }
+
+    }
 }

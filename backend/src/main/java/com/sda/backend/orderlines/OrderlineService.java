@@ -47,7 +47,7 @@ public class OrderlineService implements IOrderlineService {
     }
 
     @Override
-    public List<OrderlineModel> findByUserId(int userId) {
+    public List<OrderlineModel> findModelsByUserId(int userId) {
         var orderlines = orderlineRepository.findByUserId(userId);
         var orderlinesModel = new ArrayList<OrderlineModel>();
 
@@ -68,6 +68,11 @@ public class OrderlineService implements IOrderlineService {
     }
 
     @Override
+    public List<Orderline> findByUserId(int userId) {
+        return orderlineRepository.findByUserId(userId);
+    }
+
+    @Override
     public void deleteById(int orderlineId) {
         orderlineRepository.deleteById(orderlineId);
     }
@@ -83,6 +88,5 @@ public class OrderlineService implements IOrderlineService {
             var product = productRepository.findById(orderline.productId).get();
             orderlineRepository.updateAmountAndTotalPriceById(orderlineId,amount * product.price, amount);
         }
-
     }
 }

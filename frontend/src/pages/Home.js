@@ -6,7 +6,32 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
   const [products, setProducts] = useState([]) 
+  const [searchValue, setSearchValue] = useState("")
+  const [searchResults, setSearchResults] = useState([]) 
+
   const navigate = useNavigate()
+
+  const setInput = event => {
+    const { value } = event.target;
+    setSearchValue(value)
+    if (value.length > 0) {
+      const result = products.filter(p => {
+        if (p.title.toLowerCase().startsWith(value.toLowerCase())) {
+          return p
+        }
+
+        if (p.producerName.toLowerCase().startsWith(value.toLowerCase())) {
+          return p
+        }
+
+      })
+      setSearchResults(result)
+    }
+    else {
+      setSearchResults([])
+    }
+    
+  }
 
 
   const displayText = (product) => {
@@ -48,6 +73,17 @@ const Home = () => {
 
   return (
 <div className="products-container">
+    <input type="text" value={searchValue} onChange={setInput}/>
+
+    <div style={{marginTop: "1rem", marginBottom: "1rem"}}>Vyhledávací výsledky</div>
+    <div style={{border: "1px solid black", padding: "1rem 1rem"}}>
+      {searchResults.map(r => {
+        return (<div>
+          {r.title}
+        </div>)
+      })}
+    </div>
+  
   <div className="products">
       {renderProducts()}
   </div>

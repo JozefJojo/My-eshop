@@ -47,7 +47,8 @@ code {
 
 .products-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .products {
@@ -84,4 +85,23 @@ code {
 
   align-items: right;
   align-items: flex-end;
+}
+
+
+.user-form-label {
+  font-weight: bold;
+  
+}
+
+.user-input {
+  max-width: 300px;
+  margin-left: 1rem;
+  margin-bottom: 0.7rem
+}
+
+.user-input-button {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 8px;
+  width: 100px
 }

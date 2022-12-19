@@ -9,7 +9,9 @@ public interface IOrderlineService {
 
     Orderline createOrderline(Orderline orderline);
 
-    List<OrderlineModel> findByUserId(int userId);
+    List<OrderlineModel> findModelsByUserId(int userId);
+
+    List<Orderline> findByUserId(int userId);
 
     void deleteById(int orderlineId);
 

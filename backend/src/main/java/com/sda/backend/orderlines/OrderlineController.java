@@ -25,8 +25,13 @@ public class OrderlineController {
     }
 
     @GetMapping(params = {"userId"})
-    public List<OrderlineModel> getOrderlinesByUserId(@RequestParam(name = "userId") int userId) {
+    public List<Orderline> getOrderlinesByUserId(@RequestParam(name = "userId") int userId) {
         return orderlineService.findByUserId(userId);
+    }
+
+    @GetMapping(value = "models", params = {"userId"})
+    public List<OrderlineModel> getOrderlineModelsByUserId(@RequestParam(name = "userId") int userId) {
+        return orderlineService.findModelsByUserId(userId);
     }
 
     @ResponseStatus(HttpStatus.OK)

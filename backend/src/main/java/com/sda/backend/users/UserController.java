@@ -36,6 +36,17 @@ public class UserController {
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
 
+    @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<User> edit(@RequestBody User newUser) throws Exception {
+        var user = userService.update(newUser);
+
+        if (user == null) {
+            throw new ServerException("This user cannot be updated.");
+        }
+
+        return new ResponseEntity<>(user, HttpStatus.OK);
+    }
+
     @GetMapping("/id/{id}")
     public User getUserById(@PathVariable(value = "id") Integer id) {
         return userService.findById(id);

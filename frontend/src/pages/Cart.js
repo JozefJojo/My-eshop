@@ -3,10 +3,14 @@ import OrderlineService from '../services/OrderlineService'
 import { useAuth0 } from "@auth0/auth0-react";
 import {getUserByEmail} from '../services/UserService'
 import {ReactComponent as CloseLogo} from '../assets/close-logo.svg'
+import {useNavigate} from 'react-router-dom'
+import GlobalState from '../common/globalState'
 
 const Cart = () => {
   const { user } = useAuth0()
   const [orderlines, setOrderlines] = useState([])
+  const [userId, setUserId] = useState("")
+  const navigate = useNavigate()
 
 
   const deleteOrderlineFromCart = async (id, index) => {
@@ -63,8 +67,9 @@ const Cart = () => {
   useEffect(() => {
     const getOrderlinesAsync = async () => {
       const response = await getUserByEmail(user.email)
+      setUserId(response.data.id)
 
-      const orderlinesResponse = await OrderlineService.getOrderlines(response.data.id)
+      const orderlinesResponse = await OrderlineService.getOrderlineModels(response.data.id)
 
       setOrderlines(orderlinesResponse.data)
     }
@@ -75,6 +80,11 @@ const Cart = () => {
     
   }, [orderlines, user])
 
+  const navigateToPageOrder = () => {
+    GlobalState.orderlines = orderlines
+    navigate(`/users/${userId}/order`)
+  }
+
 
   return (<div>
     {renderOrderlines()}
@@ -82,7 +92,7 @@ const Cart = () => {
       <div>
         {orderlines.reduce((acc, item) => {return acc + item.totalPrice}, 0)}
       </div>
-      <button>Pokračovat v nákupu</button>
+      <button onClick={() => navigateToPageOrder()}>Pokračovat v nákupu</button>
 
     </div>
   </div>)

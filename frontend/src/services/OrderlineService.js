@@ -14,9 +14,20 @@ class OrderlineService {
         }
     }
 
+    async getOrderlineModels(userId) {
+        try {
+            const response = await axios.get(`${ORDERLINE_URL}/models?userId=${userId}`);
+            return response
+            
+        } catch (error) {
+            console.error(error.message)
+            return null
+        }
+    }
+
     async getOrderlines(userId) {
         try {
-            const response = await axios.get(`${ORDERLINE_URL}?userId=${userId}`);
+            const response = await axios.get(`${ORDERLINE_URL}/?userId=${userId}`);
             return response
             
         } catch (error) {

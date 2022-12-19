@@ -11,8 +11,7 @@ export const saveUser = async (accessToken, newUser) => {
       newUser,
       {
         headers: {
-          "content-type": "application/json",
-          Authorization: `Bearer ${accessToken}`
+          "content-type": "application/json"
         }
       } 
     )
@@ -24,10 +23,35 @@ export const saveUser = async (accessToken, newUser) => {
   }
 }
 
+export const getUserbyId = async (userId) => {
+  try {
+    const response = await axios.get(`${apiServerUrl}/users/id/${userId}`)
+    return response
+  } catch (error) {
+    console.log(error.message)
+  }
+}
+
+
 export const getUserByEmail = async (email) => {
 
   try {
     const response = await axios.get(`${apiServerUrl}/users/email/${email}`)
+    return response
+  } catch (error) {
+    console.log(error.message)
+  }
+}
+
+export const editUser = async (user) => {
+  try {
+    const response = await axios.put(`${apiServerUrl}/users/`, 
+    user,
+    {
+      headers: {
+        "content-type": "application/json"
+      }
+    })
     return response
   } catch (error) {
     console.log(error.message)

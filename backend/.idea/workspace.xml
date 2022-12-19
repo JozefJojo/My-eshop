@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a33754-dd3b-4433-ba2c-64db16d831f4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/IOrderlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/IOrderlineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/Orderline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/Orderline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/producers/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/producers/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/OrderlineService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/OrderlineService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/UserService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -78,7 +87,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/cetis/sampleproject/backend/src/main/java/com/sda/backend/orderlines&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cetis/sampleproject/backend/src/main/java/com/sda/backend/orders&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -92,9 +101,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sda.backend.orders" />
       <recent name="com.sda.backend.products" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/sda/backend/orders" />
       <recent name="$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines" />
       <recent name="$PROJECT_DIR$/src/main/java/com/sda/backend/cart" />
       <recent name="C:\Users\jozef\OneDrive\Počítač\JOJO\Java\MojeProgramy\sampleproject\backend\src\main" />
@@ -177,13 +188,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineController.java</url>
-          <line>47</line>
+          <line>52</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/orderlines/OrderlineController.java</url>
-          <line>49</line>
+          <line>54</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/users/UserService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/orders/OrderService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sda/backend/products/ProductService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
